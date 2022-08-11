@@ -8,12 +8,20 @@ namespace PalindromeExercise
     {
         public bool IsAPalindrome(string word)
         {
-            if(word == null)
+            var reversed = "";
+
+            for(int i = word.Length - 1; i >= 0; i--)
+            {
+                reversed += word[i];
+            }
+           if(reversed == word)
+            {
+                return true;
+            }
+            else
             {
                 return false;
             }
-            else { return true; }
-           
         }
     }       
 

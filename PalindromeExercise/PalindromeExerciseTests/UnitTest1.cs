@@ -7,8 +7,8 @@ namespace PalindromeExerciseTests
     public class UnitTest1
     {
         [Theory]
-        [InlineData ("horse", true)]
-        [InlineData("bye", false)]
+        [InlineData ("racecar", true)]
+        [InlineData("fall", false)]
         public void Test1(string word, bool expected)
         {
             //Arrange
